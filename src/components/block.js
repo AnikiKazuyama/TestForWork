@@ -20,6 +20,7 @@ export default class Block extends React.Component {
                         <div className = "title"><a href = {`https://vk.com/wall${item.from_id}_${item.id}`}>К посту</a></div>
                         <div className = "content">
                             {hasAttachments(item) ? this.renderImg(item) : null}
+                            <p dangerouslySetInnerHTML = {{__html: item.text}}/>
                         </div>
                     </div>
                 );

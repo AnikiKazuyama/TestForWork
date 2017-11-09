@@ -19585,7 +19585,8 @@ var Block = function (_React$Component) {
                     _react2.default.createElement(
                         "div",
                         { className: "content" },
-                        hasAttachments(item) ? this.renderImg(item) : null
+                        hasAttachments(item) ? this.renderImg(item) : null,
+                        _react2.default.createElement("p", { dangerouslySetInnerHTML: { __html: item.text } })
                     )
                 );
             }
